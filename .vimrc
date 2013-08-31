@@ -33,6 +33,7 @@ set showmode
 set cursorline
 
 set background=dark
+colorscheme jellybeans
 
 " Keeps indentation
 set autoindent
