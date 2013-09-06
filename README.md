@@ -12,14 +12,14 @@ Instalation
 git clone https://github.com/mkretschek/vim-setup
 cd vim-setup
 git submodule update --init
-cp .vim* ~/
+cp -r .vim* ~/
 ```
 
 This will fetch all submodules (used via `pathogen`) and
 copy the `.vimrc` file and `.vim` folder to the user's home dir.
 
 That's it. Just be aware that the files are copied. If you want to make
-changes, you'll either run `cp -f .vim* ~/` after each change or create
+changes, you'll either run `cp -r .vim* ~/` after each change or create
 symbolic links instead of coping the files.
 
 
