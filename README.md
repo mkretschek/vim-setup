@@ -29,6 +29,14 @@ Submodules
 The submodules can be listed with `git submodule` and their repos are
 listed in `.gitmodules`.
 
+To add a new submodule:
+
+```sh
+git submodule add git://github.com/owner/vim-foo.git .vim/bundle/vim-foo
+git commit -m "Added vim-foo."
+git push origin master
+cp -rf .vim* ~/
+```
 
 Contribution
 ------------
