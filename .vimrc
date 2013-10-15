@@ -26,6 +26,23 @@ set fileformats=unix,dos
 set fileformat=unix
 
 
+" Set initial window size
+" from: http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size
+if has("gui_running")
+  " Set columns to 999 if you want gvim to start maximized.
+  " I use 80 since it's the max line size I use.
+  set lines=999 columns=80
+else
+  " This is a console Vim.
+  if exists ("+lines")
+    set lines=50
+  endif
+  if exists ("+columns")
+    set columns=100
+  endif
+endif
+
+
 " Shows mode
 set showmode
 
@@ -34,6 +51,7 @@ set cursorline
 
 set background=dark
 colorscheme jellybeans
+set guifont=Droid\ Sans\ Mono:h10
 
 " Keeps indentation
 set autoindent

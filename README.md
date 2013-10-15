@@ -26,6 +26,20 @@ If you are on Windows, copy `.vim` and `.vimrc` to your home dir
 (usually at `C:\Users\username`). Then rename `.vim` to `vimfiles` and
 `.vimrc` to `_vimrc`.
 
+Font
+----
+
+I've chosen the [Droid Sans Mono](http://www.google.com/fonts#ChoosePlace:select/Collection:Droid+Sans+Mono)
+for my editor. You'll need to download and install it manually or change
+the font in the `.vimrc` file by updating the following line:
+
+```vim
+set guifont=Droid\ Sans\ Mono:h10
+```
+
+You'll need to escape the white spaces if your font's name contains them.
+`:h10` sets the font size.
+
 Submodules
 ----------
 
