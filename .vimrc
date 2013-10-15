@@ -50,7 +50,7 @@ set showmode
 set cursorline
 
 set background=dark
-colorscheme jellybeans
+colorscheme codeschool
 set guifont=Droid\ Sans\ Mono:h10
 
 " Keeps indentation
