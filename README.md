@@ -22,6 +22,9 @@ That's it. Just be aware that the files are copied. If you want to make
 changes, you'll either run `cp -r .vim* ~/` after each change or create
 symbolic links instead of coping the files.
 
+If you are on Windows, copy `.vim` and `.vimrc` to your home dir
+(usually at `C:\Users\username`). Then rename `.vim` to `vimfiles` and
+`.vimrc` to `_vimrc`.
 
 Submodules
 ----------
