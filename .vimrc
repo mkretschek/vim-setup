@@ -30,8 +30,8 @@ set fileformat=unix
 " from: http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size
 if has("gui_running")
   " Set columns to 999 if you want gvim to start maximized.
-  " I use 80 since it's the max line size I use.
-  set lines=999 columns=80
+  " 84 columns gives a 80 characters per line (+4 for the line-numbers)
+  set lines=999 columns=84
 else
   " This is a console Vim.
   if exists ("+lines")
