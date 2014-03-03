@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/nginx-vim-syntax"]
 	path = .vim/bundle/nginx-vim-syntax
 	url = git://github.com/evanmiller/nginx-vim-syntax.git
+[submodule ".vim/bundle/pegjs-vim"]
+	path = .vim/bundle/pegjs-vim
+	url = git://github.com/alunny/pegjs-vim.git
