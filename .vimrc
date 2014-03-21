@@ -86,6 +86,9 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
+" Yank to and paste from system's clipboard
+set clipboard=unnamed
+
 
 " Key mappings
 """"""""""""""
@@ -107,6 +110,7 @@ map <C-J> :bnext<CR>
 
 " Ctrl + k: shows prev buffer
 map <C-K> :bprevious<CR>
+
 
 
 " Custom commands
