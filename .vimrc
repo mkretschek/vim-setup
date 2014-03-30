@@ -90,6 +90,33 @@ set softtabstop=2
 set clipboard=unnamed
 
 
+" Backup directory
+""""""""""""""""""
+" Set swap and temp directories to keep our working directories clean.
+" Using two backslashes at the end, makes the filenames be built using
+" the whole file path, replacing slashes with a % sign, assuring they
+" are unique.
+"
+" This script should create the specified directory in user's home dir.
+"
+" @see http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
+
+let HOME_DIR   = expand("~")
+let VIM_DIR    = HOME_DIR."/.vim"
+let BACKUP_DIR = VIM_DIR."/backup"
+
+" Create a dir for vim's temp files if it does not exists
+if filewritable(HOME_DIR) && !filewritable(VIM_DIR)
+  silent execute '!mkdir "'.VIM_DIR.'"'
+endif
+
+if filewritable(VIM_DIR) && !filewritable(BACKUP_DIR)
+  silent execute '!mkdir "'.BACKUP_DIR.'"'
+endif
+
+let &backupdir=BACKUP_DIR."//"
+let &directory=BACKUP_DIR."//"
+
 " Key mappings
 """"""""""""""
 " Not sure what every command does.
