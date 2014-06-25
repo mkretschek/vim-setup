@@ -138,6 +138,9 @@ map <C-J> :bnext<CR>
 " Ctrl + k: shows prev buffer
 map <C-K> :bprevious<CR>
 
+" Ctrl + c: closes buffer without changing windows (splits)
+map <C-C> :bp\|bd #<CR>
+
 
 
 " Custom commands
