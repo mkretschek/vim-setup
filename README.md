@@ -29,7 +29,7 @@ If you are on Windows, copy `.vim` and `.vimrc` to your home dir
 Font
 ----
 
-I've chosen the [Droid Sans Mono](http://www.google.com/fonts#ChoosePlace:select/Collection:Droid+Sans+Mono)
+I've chosen the [Droid Sans Mono](http://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans+Mono)
 for my editor. You'll need to download and install it manually or change
 the font in the `.vimrc` file by updating the following line:
 
