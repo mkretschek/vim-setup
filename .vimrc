@@ -86,7 +86,7 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-au Bufread,BufNewFile *.go set shiftwidth=8
+au Bufread,BufNewFile *.go set shiftwidth=4
 au Bufread,BufNewFile *.go set softtabstop=0
 au Bufread,BufNewFile *.go set tabstop=4
 au Bufread,BufNewFile *.go set noexpandtab
